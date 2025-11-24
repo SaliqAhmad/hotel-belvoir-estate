@@ -35,7 +35,7 @@ const HeroSection = () => {
           </h1>
                     <Link
             href="/about-us"
-            className="bg-primary text-[#0F1419] px-10 py-4 rounded-lg flex items-center gap-2 font-body font-medium transition-transform duration-300 ease-in-out hover:scale-105">
+            className="bg-primary text-[#FFFFFF] px-10 py-4 rounded-lg flex items-center gap-2 font-body font-medium transition-transform duration-300 ease-in-out hover:scale-105">
 
                         <span className="!whitespace-pre-line">Book Now</span>
                         <div className="w-6 h-6">
