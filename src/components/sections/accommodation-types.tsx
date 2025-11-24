@@ -9,7 +9,7 @@ const roomsData = [
     sqFt: "90 Sq Ft",
     beds: "1 Bed",
     sleeps: "3 Sleeps",
-    link: "/rooms/royal-sapphire-suite",
+    link: "/",
   },
   {
     title: "Golden Horizon Room",
@@ -18,7 +18,7 @@ const roomsData = [
     sqFt: "60 Sq Ft",
     beds: "2 Beds",
     sleeps: "4 Sleeps",
-    link: "/rooms/golden-horizon-room",
+    link: "/",
   },
 ];
 
