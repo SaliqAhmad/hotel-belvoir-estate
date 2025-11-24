@@ -13,10 +13,10 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-{ label: 'ABOUT', href: '/about-us', isLeft: true },
-{ label: 'ROOMS', href: '/rooms', isLeft: true },
-{ label: 'GALLERY', href: '/gallery', isLeft: false },
-{ label: 'CONTACT', href: '/contact', isLeft: false }];
+{ label: 'ABOUT', href: '/', isLeft: true },
+{ label: 'ROOMS', href: '/', isLeft: true },
+{ label: 'GALLERY', href: '/', isLeft: false },
+{ label: 'CONTACT', href: '/', isLeft: false }];
 
 
 export default function HeaderNavigation() {
