@@ -15,9 +15,7 @@ const AboutUsSection = () => {
               Your Luxurious Retreat in the Heart of Srinagar
             </h2>
             <p className="font-body text-lg text-[#4A4A4A] leading-[1.7]">
-              Strategically located just minutes from iconic landmarks like Dal Lake and the Shankaracharya Temple, Hotel Belvoir Estate offers unparalleled convenience for both leisure and business travelers. Whether you're here to explore the stunning natural beauty of Srinagar or seeking a peaceful oasis to unwind, our hotel is perfectly positioned to give you a memorable experience.
-
-Our elegant property blends contemporary design with classic Kashmiri charm, ensuring your stay is nothing short of exceptional. With luxurious amenities and a serene atmosphere, we promise a stay that caters to both relaxation and productivity.
+              Just minutes from Dal Lake and the Shankaracharya Temple, Hotel Belvoir Estate offers unmatched convenience for both leisure and business travelers. Ideally positioned to explore Srinagar or simply unwind, our property blends contemporary design with classic Kashmiri charm. With luxurious amenities and a tranquil atmosphere, we ensure a stay that is both relaxing and productive.
             </p>
             <Link
               href="/about-us"
