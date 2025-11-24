@@ -29,7 +29,8 @@ const HeroSection = () => {
 
             <div className="relative z-10 container h-full">
                 <div className="flex flex-col justify-center items-center h-full text-white text-center">
-                    <h1 className="font-display text-5xl md:text-[70px] leading-none font-medium tracking-[-0.02em] mb-10 md:!text-white !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">Experience Luxury at Hotel 
+                    <h1 className="font-display text-5xl md:text-[70px] leading-none font-medium tracking-[-0.02em] mb-10 md:!text-white !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line">Experience Luxury at Hotel 
+                          Belvoir Estate 
 
           </h1>
                     <Link
