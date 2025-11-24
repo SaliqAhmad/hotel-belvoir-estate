@@ -4,9 +4,9 @@ import { Instagram, Twitter, Facebook, MessageCircle } from 'lucide-react';
 
 const pagesLinks = [
 { href: '/', label: 'Home' },
-{ href: '/about-us', label: 'About' },
-{ href: '/rooms', label: 'Rooms' },
-{ href: '/contact', label: 'Contact' }];
+{ href: '/', label: 'About' },
+{ href: '/', label: 'Rooms' },
+{ href: '/', label: 'Contact' }];
 
 
 const utilityLinks = [
