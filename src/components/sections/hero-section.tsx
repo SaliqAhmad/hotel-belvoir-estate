@@ -29,14 +29,14 @@ const HeroSection = () => {
 
             <div className="relative z-10 container h-full">
                 <div className="flex flex-col justify-center items-center h-full text-white text-center">
-                    <h1 className="font-display text-5xl md:text-[70px] leading-none font-medium tracking-[-0.02em] mb-10 md:!text-white !whitespace-pre-line !whitespace-pre-line">Experience The Pinnacle Of Luxury
+                    <h1 className="font-display text-5xl md:text-[70px] leading-none font-medium tracking-[-0.02em] mb-10 md:!text-white !whitespace-pre-line !whitespace-pre-line">
             <br />
           </h1>
                     <Link
             href="/about-us"
             className="bg-primary text-[#0F1419] px-10 py-4 rounded-lg flex items-center gap-2 font-body font-medium transition-transform duration-300 ease-in-out hover:scale-105">
 
-                        <span>Book Now</span>
+                        <span className="!whitespace-pre-line">Book Now</span>
                         <div className="w-6 h-6">
                             <ArrowIcon />
                         </div>
