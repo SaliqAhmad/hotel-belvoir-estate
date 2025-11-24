@@ -9,13 +9,15 @@ const AboutUsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-10 gap-12 lg:gap-20 items-center">
           <div className="lg:col-span-4 flex flex-col items-start space-y-6">
             <p className="font-body text-sm font-medium uppercase tracking-[0.1em] text-[#D4AF37]">
-              (WELCOME TO LUXoReFI)
+              (WELCOME TO Hotel Belvoir Estate)
             </p>
             <h2 className="font-display text-[48px] font-semibold leading-[1.2] text-[#1A1A1A]">
-              Luxorefi Hotel in the Heart of America
+              Your Luxurious Retreat in the Heart of Srinagar
             </h2>
             <p className="font-body text-lg text-[#4A4A4A] leading-[1.7]">
-              Luxury hotel strategically a located near a major transit hubs like airports & railway stations offers paralleled convenience for travellers. Nestled just steps away from the iconic tourist destinations, including historic caves bustling marketplace this luxury hotel serves as the perfect retreat for both leisure and business guests.
+              Strategically located just minutes from iconic landmarks like Dal Lake and the Shankaracharya Temple, Hotel Belvoir Estate offers unparalleled convenience for both leisure and business travelers. Whether you're here to explore the stunning natural beauty of Srinagar or seeking a peaceful oasis to unwind, our hotel is perfectly positioned to give you a memorable experience.
+
+Our elegant property blends contemporary design with classic Kashmiri charm, ensuring your stay is nothing short of exceptional. With luxurious amenities and a serene atmosphere, we promise a stay that caters to both relaxation and productivity.
             </p>
             <Link
               href="/about-us"
