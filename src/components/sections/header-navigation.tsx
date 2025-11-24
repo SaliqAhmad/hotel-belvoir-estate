@@ -106,7 +106,7 @@ export default function HeaderNavigation() {
         <div className="flex justify-between items-center mb-10">
           <Link href="/" onClick={() => setIsMenuOpen(false)}>
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e3803ac6-8c4f-45bd-8330-882b643f54bd-luxorefi-webflow-io/assets/images/67887ed3b760263c9d576611_Logo_20White-2.png"
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/e3803ac6-8c4f-45bd-8330-882b643f54bd/visual-edit-uploads/1763974296161-ki9ja7jsij.png"
               alt="Luxorefi Logo"
               width={140}
               height={26} />
