@@ -89,7 +89,7 @@ const TestimonialsCarousel = () => {
                 What Our Guests Say
               </h2>
               <p className="text-center text-muted text-lg max-w-xl mx-auto">
-                Discover why travelers from around the world choose Hotel Belvoir Estate for their Kashmir experience
+                Discover why travelers from around the world choose Hotel Belvior Estate for their Kashmir experience
               </p>
             </div>
             <div className="hidden md:flex items-center gap-4 absolute right-20 lg:right-40 top-0">
