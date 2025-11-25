@@ -4,7 +4,7 @@ import Link from "next/link";
 const roomsData = [
   {
     title: "Royal Sapphire Suite",
-    price: "$300",
+    price: "₹5000",
     imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e3803ac6-8c4f-45bd-8330-882b643f54bd-luxorefi-webflow-io/assets/images/678743d2572cb060faff37a1_Rooms_20Thumbnail-4.jpg",
     sqFt: "90 Sq Ft",
     beds: "1 Bed",
@@ -13,7 +13,7 @@ const roomsData = [
   },
   {
     title: "Golden Horizon Room",
-    price: "$200",
+    price: "₹3500",
     imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e3803ac6-8c4f-45bd-8330-882b643f54bd-luxorefi-webflow-io/assets/images/6787439cc6f7d1f53641ff07_Rooms_20Thumbnail_20_7_-5.jpg",
     sqFt: "60 Sq Ft",
     beds: "2 Beds",
