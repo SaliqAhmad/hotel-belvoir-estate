@@ -96,7 +96,7 @@ const Footer = () => {
 
         <div className="mt-20 pt-10 border-t border-white/10">
           <div className="flex flex-col md:flex-row md:justify-between items-center text-center md:text-left gap-4 md:gap-0 text-sm text-[#7A7A7A]">
-            <p className="!whitespace-pre-line">COPYRIGHT © BELVOIR ESTATE</p>
+            <p className="!whitespace-pre-line">COPYRIGHT © BELVIOR ESTATE</p>
             <p>
               Designed by{' '}
               <a
