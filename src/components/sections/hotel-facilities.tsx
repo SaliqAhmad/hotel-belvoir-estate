@@ -39,7 +39,7 @@ const HotelFacilities = () => {
       <div className="container">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary mb-4">(HOTEL FACILITIES)</p>
-          <h2 className="font-display text-4xl md:text-[48px] leading-[1.2] font-medium text-white mb-6">Our Belvoir Estate Facilities</h2>
+          <h2 className="font-display text-4xl md:text-[48px] leading-[1.2] font-medium text-white mb-6">Our Belvior Estate Facilities</h2>
           <p className="max-w-xl mx-auto text-[#B8B8B8] leading-[1.6]">
             This luxury hotel services as the perfect retreat for both leisure and business guests.
           </p>
