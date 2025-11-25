@@ -9,7 +9,7 @@ const AboutUsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-10 gap-12 lg:gap-20 items-center">
           <div className="lg:col-span-4 flex flex-col items-start space-y-6">
             <p className="font-body text-sm font-medium uppercase tracking-[0.1em] text-[#D4AF37]">
-              (WELCOME TO Hotel Belvoir Estate)
+              (WELCOME TO Hotel Belvior Estate)
             </p>
             <h2 className="font-display text-[48px] font-semibold leading-[1.2] text-[#1A1A1A]">
               Your Luxurious Retreat in the Heart of Srinagar
