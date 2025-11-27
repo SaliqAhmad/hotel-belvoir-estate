@@ -15,35 +15,46 @@ export default function RoomsFilterSection() {
   const [activeCategory, setActiveCategory] = useState("all");
 
   return (
-    <section className="py-16 bg-white border-b border-[--color-border]">
-      <div className="container">
-        <div className="max-w-6xl mx-auto">
+    <section className="py-24 bg-gradient-to-b from-white via-[--color-light-cream]/30 to-[--color-light-cream] relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[--color-gold-accent]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[--color-gold-accent]/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+      
+      <div className="container relative z-10">
+        <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-10">
-            <p className="text-sm text-[--color-gold-accent] mb-3 uppercase tracking-[0.25em] font-medium">
-              (Find Your Stay)
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-[--color-text-dark] mb-4">
-              Browse Our Collection
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-5">
+              <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-[--color-gold-accent]" />
+              <p className="text-xs text-[--color-gold-accent] uppercase tracking-[0.3em] font-semibold">
+                Find Your Sanctuary
+              </p>
+              <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-[--color-gold-accent]" />
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-[--color-text-dark] mb-6 leading-tight">
+              Discover Your Perfect Stay
             </h2>
-            <p className="text-base text-[--color-text-muted] max-w-2xl mx-auto">
-              Filter by room type to find your ideal accommodation
+            <p className="text-lg text-[--color-text-muted] max-w-2xl mx-auto leading-relaxed">
+              Explore our curated collection of luxury accommodations, each designed to provide an unforgettable experience
             </p>
           </div>
           
           {/* Filter Buttons */}
-          <div className="flex flex-wrap gap-3 justify-center mb-8">
+          <div className="flex flex-wrap gap-4 justify-center">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 text-sm uppercase tracking-wider ${
+                className={`relative px-8 py-4 rounded-full font-medium transition-all duration-500 text-sm uppercase tracking-[0.15em] overflow-hidden group ${
                   activeCategory === category.id
-                    ? "bg-[--color-gold-accent] text-white shadow-lg scale-105"
-                    : "bg-[--color-light-cream] text-[--color-text-dark] hover:bg-[--color-gold-accent] hover:text-white border border-transparent hover:border-[--color-gold-accent] shadow-sm hover:shadow-md hover:scale-105"
+                    ? "bg-[--color-gold-accent] text-white shadow-xl shadow-[--color-gold-accent]/30"
+                    : "bg-white text-[--color-text-dark] hover:text-[--color-gold-accent] border-2 border-[--color-border] hover:border-[--color-gold-accent] shadow-md hover:shadow-xl"
                 }`}
               >
-                {category.label}
+                <span className="relative z-10">{category.label}</span>
+                {activeCategory !== category.id && (
+                  <div className="absolute inset-0 bg-[--color-gold-accent]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                )}
               </button>
             ))}
           </div>
