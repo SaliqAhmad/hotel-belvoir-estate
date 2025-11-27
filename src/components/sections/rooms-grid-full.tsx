@@ -85,10 +85,10 @@ export default function RoomsGridFull() {
           {rooms.map((room) => (
             <div
               key={room.id}
-              className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-72 overflow-hidden">
                 <img
                   src={room.image}
                   alt={room.title}
@@ -96,52 +96,54 @@ export default function RoomsGridFull() {
                 />
                 
                 {/* Price Badge */}
-                <div className="absolute top-4 right-4">
-                  <div className="relative">
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="relative w-28 h-28">
                     <img
                       src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e3803ac6-8c4f-45bd-8330-882b643f54bd-luxorefi-webflow-io/assets/images/678748f9262cf9b29131097f_Price_20BG-24.png"
                       alt=""
-                      className="w-24 h-24"
+                      className="w-full h-full object-contain drop-shadow-lg"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <span className="text-white text-xl font-display font-semibold">
+                      <span className="text-white text-2xl font-display font-bold tracking-tight">
                         ${room.price}
                       </span>
-                      <span className="text-white/90 text-xs">/Night</span>
+                      <span className="text-white/95 text-xs font-medium mt-0.5">/Night</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <div className="w-20 h-20 rounded-full border-2 border-white flex items-center justify-center mx-auto mb-2">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="w-20 h-20 rounded-full border-2 border-white/90 flex items-center justify-center mx-auto mb-3 backdrop-blur-sm bg-white/10">
                       <ArrowUpRight className="w-8 h-8" />
                     </div>
-                    <span className="text-lg font-medium">View Details</span>
+                    <span className="text-lg font-medium tracking-wide">View Details</span>
                   </div>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="font-display text-2xl text-[--color-text-dark] mb-4 group-hover:text-[--color-gold-accent] transition-colors">
+              <div className="p-6 bg-gradient-to-b from-white to-[#FAFAF9]">
+                <h3 className="font-display text-2xl text-[--color-text-dark] mb-5 leading-tight group-hover:text-[--color-gold-accent] transition-colors duration-300">
                   {room.title}
                 </h3>
 
-                {/* Features */}
-                <div className="flex items-center justify-between text-sm text-[--color-text-muted]">
+                {/* Features with Dark Background */}
+                <div className="bg-[--color-secondary-dark] rounded-lg px-4 py-3 flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <Maximize2 className="w-4 h-4" />
-                    <span>{room.sqft} sq ft</span>
+                    <Maximize2 className="w-4 h-4 text-[--color-gold-accent]" />
+                    <span className="text-white text-sm font-medium">{room.sqft} sq ft</span>
                   </div>
+                  <div className="w-px h-5 bg-white/20" />
                   <div className="flex items-center gap-2">
-                    <Bed className="w-4 h-4" />
-                    <span>{room.beds} Beds</span>
+                    <Bed className="w-4 h-4 text-[--color-gold-accent]" />
+                    <span className="text-white text-sm font-medium">{room.beds} Beds</span>
                   </div>
+                  <div className="w-px h-5 bg-white/20" />
                   <div className="flex items-center gap-2">
-                    <Users className="w-4 h-4" />
-                    <span>{room.sleeps} Sleeps</span>
+                    <Users className="w-4 h-4 text-[--color-gold-accent]" />
+                    <span className="text-white text-sm font-medium">{room.sleeps} Sleeps</span>
                   </div>
                 </div>
               </div>
