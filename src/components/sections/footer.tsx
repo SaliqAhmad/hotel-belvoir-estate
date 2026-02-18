@@ -3,30 +3,30 @@ import Link from 'next/link';
 import { Instagram, Twitter, Facebook, MessageCircle } from 'lucide-react';
 
 const pagesLinks = [
-{ href: '/', label: 'Home' },
-{ href: '/', label: 'About' },
-{ href: '/', label: 'Rooms' },
-{ href: '/', label: 'Contact' }];
+  { href: '/', label: 'Home' },
+  { href: '/', label: 'About' },
+  { href: '/', label: 'Rooms' },
+  { href: '/', label: 'Contact' }];
 
 
 const utilityLinks = [
-{ href: '/password-protected', label: 'Password Protected' },
-{ href: '/404', label: '404 Not Found' },
-{ href: '/style-guide', label: 'Style Guide' },
-{ href: '/changelog', label: 'Changelog' },
-{ href: '/licenses', label: 'Licenses' }];
+  { href: '/password-protected', label: 'Password Protected' },
+  { href: '/404', label: '404 Not Found' },
+  { href: '/style-guide', label: 'Style Guide' },
+  { href: '/changelog', label: 'Changelog' },
+  { href: '/licenses', label: 'Licenses' }];
 
 
 const cmsLinks = [
-{ href: '/rooms/royal-sapphire-suite', label: 'Rooms Details' },
-{ href: '/blog/how-to-plan-the-perfect-romantic-getaway', label: 'Blog Details' }];
+  { href: '/rooms/royal-sapphire-suite', label: 'Rooms Details' },
+  { href: '/blog/how-to-plan-the-perfect-romantic-getaway', label: 'Blog Details' }];
 
 
 const socialLinks = [
-{ href: 'https://instagram.com', label: 'IG', icon: Instagram },
-{ href: 'https://twitter.com', label: 'TW', icon: Twitter },
-{ href: 'https://facebook.com', label: 'FB', icon: Facebook },
-{ href: 'https://whatsapp.com', label: 'WS', icon: MessageCircle }];
+  { href: 'https://instagram.com', label: 'IG', icon: Instagram },
+  { href: 'https://twitter.com', label: 'TW', icon: Twitter },
+  { href: 'https://facebook.com', label: 'FB', icon: Facebook },
+  { href: 'https://whatsapp.com', label: 'WS', icon: MessageCircle }];
 
 
 const Footer = () => {
@@ -48,14 +48,15 @@ const Footer = () => {
       </div>
 
       <div className="relative z-10 container pt-[120px] pb-[40px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr] gap-x-8 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-x-8 gap-y-10">
           <div>
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/e3803ac6-8c4f-45bd-8330-882b643f54bd/visual-edit-uploads/1763981152128-9nr5pt6vmxp.png"
-                alt="Luxorefi Logo"
-                width={146.5}
-                height={30} className="!w-full !h-full !max-w-full" />
+                src="/Logo.svg"
+                alt="Belvoir Estate Logo"
+                width={180}
+                height={34}
+                className="w-[140px] md:w-[180px] h-auto object-contain" />
 
             </Link>
             <p className="text-base text-[#B8B8B8] leading-[1.7]">
@@ -86,10 +87,22 @@ const Footer = () => {
             <h3 className="font-bold text-white text-xl mb-6 font-body">Pages</h3>
             <div className="flex flex-col space-y-4">
               {pagesLinks.map((link) =>
-              <Link key={link.label} href={link.href} className="text-[#B8B8B8] hover:text-primary transition-colors">
+                <Link key={link.label} href={link.href} className="text-[#B8B8B8] hover:text-primary transition-colors">
                   {link.label}
                 </Link>
               )}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-white text-xl mb-6 font-body">Contact</h3>
+            <div className="flex flex-col space-y-4">
+              <a href="tel:8082111549" className="text-[#B8B8B8] hover:text-primary transition-colors">
+                80821 11549
+              </a>
+              <a href="tel:6006248474" className="text-[#B8B8B8] hover:text-primary transition-colors">
+                6006248474
+              </a>
             </div>
           </div>
         </div>

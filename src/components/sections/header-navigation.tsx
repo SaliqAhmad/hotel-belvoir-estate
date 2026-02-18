@@ -13,10 +13,10 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-{ label: 'ABOUT', href: '/', isLeft: true },
-{ label: 'ROOMS', href: '/', isLeft: true },
-{ label: 'GALLERY', href: '/', isLeft: false },
-{ label: 'CONTACT', href: '/', isLeft: false }];
+  { label: 'ABOUT', href: '/', isLeft: true },
+  { label: 'ROOMS', href: '/', isLeft: true },
+  { label: 'GALLERY', href: '/', isLeft: false },
+  { label: 'CONTACT', href: '/', isLeft: false }];
 
 
 export default function HeaderNavigation() {
@@ -47,7 +47,7 @@ export default function HeaderNavigation() {
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-x-12">
               {leftNavItems.map((item) =>
-              <li key={item.label}>
+                <li key={item.label}>
                   <Link href={item.href} className="text-white hover:text-primary hover:underline underline-offset-4 transition-all !text-xs">
                     {item.label}
                   </Link>
@@ -57,25 +57,27 @@ export default function HeaderNavigation() {
           </nav>
 
           {/* Logo */}
-          <div className="absolute left-1/2 -translate-x-1/2">
+          <div className="absolute left-1/2 -translate-x-1/2 transition-all duration-300">
             <Link href="/">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/e3803ac6-8c4f-45bd-8330-882b643f54bd/visual-edit-uploads/1763974296161-ki9ja7jsij.png"
-                alt="Luxorefi Logo"
-                width={160}
-                height={30}
-                className="!text-base !w-full !h-full !max-w-full"
+                src="/Logo.svg"
+                alt="Belvoir Estate Logo"
+                width={200}
+                height={40}
+                className={cn(
+                  "h-auto object-contain transition-all duration-300",
+                  isScrolled ? "w-[120px] md:w-[140px]" : "w-[160px] md:w-[220px]"
+                )}
                 priority />
-
             </Link>
           </div>
-          
+
           <div className="flex items-center gap-x-12">
             {/* Desktop Right Nav */}
             <nav className="hidden lg:block">
               <ul className="flex items-center gap-x-12">
                 {rightNavItems.map((item) =>
-                <li key={item.label}>
+                  <li key={item.label}>
                     <Link href={item.href} className="text-white hover:text-primary hover:underline underline-offset-4 transition-all !text-xs">
                       {item.label}
                     </Link>
@@ -106,10 +108,11 @@ export default function HeaderNavigation() {
         <div className="flex justify-between items-center mb-10">
           <Link href="/" onClick={() => setIsMenuOpen(false)}>
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/e3803ac6-8c4f-45bd-8330-882b643f54bd/visual-edit-uploads/1763974296161-ki9ja7jsij.png"
-              alt="Luxorefi Logo"
-              width={140}
-              height={26} />
+              src="/Logo.svg"
+              alt="Belvoir Estate Logo"
+              width={120}
+              height={22}
+              className="w-[120px] h-auto object-contain" />
 
           </Link>
           <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu">
@@ -118,11 +121,11 @@ export default function HeaderNavigation() {
         </div>
         <nav>
           {navItems.map((item) =>
-          <div key={item.label} className="border-b border-white/10">
+            <div key={item.label} className="border-b border-white/10">
               <Link
-              href={item.href}
-              className="block py-4 text-lg w-full hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}>
+                href={item.href}
+                className="block py-4 text-lg w-full hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}>
 
                 {item.label}
               </Link>
