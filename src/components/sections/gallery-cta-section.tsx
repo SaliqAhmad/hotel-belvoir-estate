@@ -16,7 +16,7 @@ export default function GalleryCtaSection() {
           <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
             Experience the elegance and comfort shown in our gallery. Reserve your room now and immerse yourself in luxury.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button className="bg-[#D4A574] text-white px-8 py-4 rounded-lg hover:bg-[#C99760] transition-all duration-300 flex items-center justify-center gap-2 group">
               <span className="font-medium">Book a Room</span>
@@ -30,13 +30,14 @@ export default function GalleryCtaSection() {
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-white/80">
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-[#D4A574]" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 80821 11549</span>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-[#D4A574]" />
-              <span>info@luxorefi.com</span>
+              <span>info@belviorestate.com</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>

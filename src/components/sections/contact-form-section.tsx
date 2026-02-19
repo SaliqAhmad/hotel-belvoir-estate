@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { toast } from "sonner";
+
 
 export default function ContactFormSection() {
   const [formData, setFormData] = useState({
@@ -24,7 +26,14 @@ export default function ContactFormSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log("Form submitted:", formData);
+    toast.success("Thank you for your message! We'll get back to you soon.");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (

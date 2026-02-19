@@ -53,7 +53,7 @@ export default function RoomsCtaSection() {
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">Call Us</h3>
               <p className="text-white/60 text-sm mb-2">24/7 Support</p>
-              <p className="text-white font-medium">+1 (555) 123-4567</p>
+              <p className="text-white font-medium">+91 80821 11549</p>
             </div>
 
             {/* Email */}
@@ -63,7 +63,7 @@ export default function RoomsCtaSection() {
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">Email Us</h3>
               <p className="text-white/60 text-sm mb-2">Quick Response</p>
-              <p className="text-white font-medium text-sm">reservations@luxorefi.com</p>
+              <p className="text-white font-medium text-sm">info@belviorestate.com</p>
             </div>
 
             {/* Hours */}
@@ -82,9 +82,10 @@ export default function RoomsCtaSection() {
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">Visit Us</h3>
-              <p className="text-white/60 text-sm mb-2">Downtown</p>
-              <p className="text-white font-medium text-sm">123 Luxury Ave, NY</p>
+              <p className="text-white/60 text-sm mb-2">Srinagar</p>
+              <p className="text-white font-medium text-sm">Opposite Dal Lake, Kashmir</p>
             </div>
+
           </div>
         </div>
       </div>

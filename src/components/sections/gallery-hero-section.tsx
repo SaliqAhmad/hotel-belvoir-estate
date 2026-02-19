@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { ArrowUpRight } from "lucide-react";
 
@@ -7,10 +8,13 @@ export default function GalleryHeroSection() {
     <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-[#0F1A24]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e3803ac6-8c4f-45bd-8330-882b643f54bd-luxorefi-webflow-io/assets/images/67877f7ef6fba6015d1abe73_Gallery_20Thumbnail-13.jpg"
           alt="Luxorefi Gallery"
+          fill
           className="w-full h-full object-cover"
+          priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
       </div>
@@ -30,3 +34,4 @@ export default function GalleryHeroSection() {
     </section>
   );
 }
+

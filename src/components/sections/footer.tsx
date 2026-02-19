@@ -75,6 +75,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Follow us on ${social.label}`}
                     className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-[#B8B8B8] bg-transparent hover:bg-primary hover:text-white hover:border-primary transition-all duration-300">
                     <Icon className="w-5 h-5" />
                   </a>);

@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowRight, Maximize2, Bed, Users, Star } from "lucide-react";
 import Link from "next/link";
+
 
 const rooms = [
   {
@@ -100,7 +102,7 @@ export default function RoomsGridFull() {
       {/* Decorative Elements */}
       <div className="absolute top-20 right-0 w-72 h-72 bg-[--color-gold-accent]/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-0 w-72 h-72 bg-[--color-gold-accent]/10 rounded-full blur-3xl" />
-      
+
       <div className="container relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
           {rooms.map((room, index) => (
@@ -111,12 +113,14 @@ export default function RoomsGridFull() {
             >
               {/* Image Container */}
               <div className="relative h-72 overflow-hidden">
-                <img
+                <Image
                   src={room.image}
                   alt={room.title}
+                  fill
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                 />
-                
+
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
@@ -124,7 +128,7 @@ export default function RoomsGridFull() {
                 <div className="absolute top-5 left-5 bg-gradient-to-r from-[--color-gold-accent] to-[--color-gold-hover] text-white px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider shadow-xl backdrop-blur-sm">
                   {room.category}
                 </div>
-                
+
                 {/* Rating Badge */}
                 <div className="absolute top-5 right-5 bg-white/98 backdrop-blur-md text-[--color-text-dark] px-3.5 py-2 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-xl border border-[--color-gold-accent]/20">
                   <Star className="w-4 h-4 fill-[--color-gold-accent] text-[--color-gold-accent]" />
@@ -133,7 +137,7 @@ export default function RoomsGridFull() {
 
                 {/* View Details Button - Shows on Hover */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <Link 
+                  <Link
                     href={`/rooms/${room.id}`}
                     className="bg-white text-[--color-text-dark] px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover:bg-[--color-gold-accent] hover:text-white transition-all duration-300 shadow-2xl transform translate-y-6 group-hover:translate-y-0 border-2 border-white hover:border-[--color-gold-accent]"
                   >

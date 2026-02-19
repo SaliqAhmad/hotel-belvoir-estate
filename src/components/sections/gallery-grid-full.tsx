@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const galleryImages = [
   {
     id: 1,
@@ -79,10 +81,12 @@ export default function GalleryGridFull() {
               key={image.id}
               className={`group relative overflow-hidden rounded-2xl cursor-pointer ${image.span}`}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
+                fill
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-6 left-6 right-6">
@@ -96,3 +100,4 @@ export default function GalleryGridFull() {
     </section>
   );
 }
+

@@ -22,14 +22,15 @@ const AboutStorySection = () => {
               A Legacy of Exceptional Hospitality
             </h2>
             <p className="font-body text-lg text-[#4A4A4A] leading-[1.7]">
-              Since our founding, Luxorefi has been synonymous with unparalleled luxury and impeccable service. Our journey began with a singular vision: to create a sanctuary where every guest experiences the pinnacle of comfort and sophistication.
+              Since our founding, Hotel Belvior Estate has been synonymous with unparalleled luxury and impeccable service. Our journey began with a singular vision: to create a sanctuary where every guest experiences the pinnacle of comfort and sophistication.
             </p>
             <p className="font-body text-lg text-[#4A4A4A] leading-[1.7]">
-              Nestled in the heart of America, our hotel has become a landmark destination, welcoming distinguished travelers from around the globe. Every detail, from our meticulously designed suites to our world-class amenities, reflects our unwavering commitment to excellence.
+              Nestled in the heart of Srinagar, Kashmir, our hotel has become a landmark destination, welcoming distinguished travelers from around the globe. Every detail, from our meticulously designed suites to our world-class amenities, reflects our unwavering commitment to excellence.
             </p>
             <p className="font-body text-lg text-[#4A4A4A] leading-[1.7]">
               Today, we continue to set the standard for luxury hospitality, combining timeless elegance with modern innovation to create unforgettable experiences for each and every guest.
             </p>
+
           </div>
         </div>
       </div>

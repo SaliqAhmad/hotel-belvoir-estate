@@ -6,17 +6,17 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+    details: ["+91 80821 11549", "+91 60062 48474"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@luxorefi.com", "reservations@luxorefi.com"],
+    details: ["info@belviorestate.com", "reservations@belviorestate.com"],
   },
   {
     icon: MapPin,
     title: "Address",
-    details: ["1234 Luxury Avenue", "Beverly Hills, CA 90210"],
+    details: ["Opposite Dal Lake", "Srinagar, Kashmir 190001"],
   },
   {
     icon: Clock,
@@ -24,6 +24,7 @@ const contactInfo = [
     details: ["24/7 Front Desk", "Always at your service"],
   },
 ];
+
 
 export default function ContactInfoSection() {
   return (
